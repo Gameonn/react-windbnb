@@ -1,0 +1,37 @@
+.header {
+  height: 5rem;
+  /* background-color: #8a2b06; */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2');
+}
+
+.header .polygon {
+  -webkit-clip-path: polygon(0 0, 100% 35%, 100% 65%, 0% 100%);
+  clip-path: polygon(0 20%, 60% 55%, 60% 100%, 0 100%);
+  width: 20px;
+  height: 20px;
+  background: #EB5757;
+  border-radius: 3px;
+  position: absolute;
+  left: 120px;
+  top: 27px;
+}
+.header .logo-text {
+  font-family: 'Poppins' , sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EB5757;
+}
