@@ -9,14 +9,15 @@ const SearchBar = (props) => {
     const [showModal, setShowModal] = useState(false);
     const searchHandler = (e) => {
         e.preventDefault();
-        console.log(location+" "+guests);
         setShowModal(true);
     }
 
     const inputHandler = (e, type) => {
         const val = e.target.value;
-        console.log(val, type);
-        if(type === 'location' ) setLocation(val);
+        if(type === 'location' ) {
+          setLocation(val);
+          localStorage.setItem('location', val);  
+        } 
         else setGuests(val);
     }
 
