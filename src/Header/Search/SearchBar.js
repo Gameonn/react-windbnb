@@ -23,9 +23,8 @@ const SearchBar = (props) => {
 
     return (
         <div  style={{marginLeft: 'auto',width: 'auto'}}>
-            {showModal && 
-                <SearchForm onConfirm={() => setShowModal(false)} 
-                location={location} guests={guests} changeInput={inputHandler} /> } 
+        <SearchForm show={showModal} onConfirm={() => setShowModal(false)} 
+                location={location} guests={guests} changeInput={inputHandler} />
             <form onSubmit={searchHandler} className="input-group">
                 {/* <span className="input-group-text">Helsinki, Finland</span> */}
                 <input type="text" className="form-control" value={location} placeholder="Location" 
