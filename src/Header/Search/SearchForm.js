@@ -1,9 +1,9 @@
 import Modal from "../../UI/Modal";
 import SearchResults from "./SearchResults";
 
-const SearchForm = ({location, guests, onConfirm, changeInput}) => {
+const SearchForm = ({location, guests, onConfirm, changeInput, show}) => {
     return (
-            <Modal onConfirm={onConfirm}>
+            <Modal show={show} onConfirm={onConfirm}>
                 <div className="row">
                     <div className="col-6">
                         <input type="text" className="form-control" placeholder="Filter by city or country" 
