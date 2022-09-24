@@ -1,38 +1,37 @@
-import "./Card.css";
+import style from "./Card.module.css";
 
 export default function Card({
-  image = "../images/image-not-found.png",
-  image_alt,
+  image,
   superhost = false,
   info,
   rating,
   title,
 }) {
   return (
-    <div className="card">
-      <div className="image-container">
+    <div className={style["card"]}>
+      <div className={style["image-container"]}>
         <img
           src={`${process.env.PUBLIC_URL}${image}`}
-          alt={image_alt}
-          className="image"
+          alt={title}
+          className={style["image"]}
         ></img>
       </div>
 
-      <div className="about-container">
+      <div className={style["about-container"]}>
         <div>
           {superhost ? (
-            <button className="superhost-button">super host</button>
+            <button className={style["superhost-button"]}>super host</button>
           ) : null}
-          <span className="info">{info}</span>
+          <span className={style["info"]}>{info}</span>
         </div>
         {rating ? (
-          <div className="rating-container">
+          <div className={style["rating-container"]}>
             <span className="material-icons star">star</span>
-            <span className="rating">{rating}</span>
+            <span className={style["rating"]}>{rating}</span>
           </div>
         ) : null}
       </div>
-      <div className="title">{title}</div>
+      <div className={style["title"]}>{title}</div>
     </div>
   );
 }
