@@ -1,0 +1,342 @@
+.App {
+  margin: 2.5% 1.5%;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 4.8%;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  float: left;
+  display: flex;
+  margin: auto 0px;
+  cursor: pointer;
+}
+
+.triangle-logo {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 16px solid #eb5757;
+  border-radius: 2px;
+}
+
+.logo-name {
+  padding-left: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #eb5757;
+}
+
+/* End of Header */
+
+/* Drawer */
+.drawer {
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 460px;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  font-family: "Mulish";
+  font-style: normal;
+}
+
+.drawer-contents {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Search box with three options */
+.search-box {
+  width: calc(100% - 7% - 7%);
+  margin: 4% 7% 0 7%;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.select-button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.select-button:focus {
+  border: 1px solid #333333 !important;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+  border-radius: 16px;
+}
+
+.button-name {
+  font-weight: 800;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.set-values {
+  text-align: center;
+}
+.set-values:focus {
+  border: none !important;
+}
+
+.search-button {
+  font-weight: bold;
+  font-size: 14px;
+  color: #f2f2f2;
+  width: 127px;
+  height: 48px;
+  background: #eb5757;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 16px;
+  align-items: center;
+  padding: 0 5%;
+  transition: 0.3s;
+}
+.search-button:hover {
+  opacity: 0.8;
+}
+/* End of Search Box */
+
+/* Search Containers for selecting filters */
+
+.search-container {
+  width: calc(100% - 7% - 7%);
+  margin: 0 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.select-location-container,
+.select-guests-container {
+  margin-top: 10%;
+  color: #4f4f4f;
+}
+
+.select-location-options {
+  padding: 5%;
+  cursor: pointer;
+}
+
+.select-guests-options {
+  padding: 5%;
+}
+
+.option-content {
+  color: #333333;
+  font-weight: bold;
+}
+
+button.option-content,
+span.option-content {
+  margin: 2% 2% 2% 0;
+}
+
+button.option-content {
+  font-size: 17px;
+  font-weight: normal;
+  padding: auto;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  color: #828282;
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+/* End of Drawer */
+
+/* Filter Options - With three options (two to open drawer) and Search Button */
+.filter-options-container {
+  float: right;
+  width: 297px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filter-option {
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  height: inherit;
+  flex-grow: 1;
+}
+
+/* The Add Guests button in both drawer and filter box */
+#guests,
+#select-guests {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+
+#search {
+  color: #bdbdbd;
+}
+/* End of Filter Options */
+
+/* Main Heading Div */
+.title-container {
+  margin: 0 4.8%;
+  margin-top: 5%;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.property-count {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+  align-self: center;
+}
+
+/* End of Main Heading Div */
+
+/* Cards */
+
+.card-container {
+  max-width: inherit;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards-placeholder {
+  padding: 8% 0 16% 0;
+}
+
+/* End of Cards */
+
+/* Some General Styles */
+
+button {
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.icon-text {
+  margin: auto;
+  margin-left: 5%;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* To Make Page Responsive */
+
+@media screen and (min-width: 480px) {
+  .search-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 55px;
+  }
+  .no-display-big {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .no-display-small {
+    display: none;
+  }
+
+  .drawer {
+    height: 520px;
+  }
+  .drawer-header {
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 4%;
+  }
+  .filter-options-container {
+    margin-top: 39px;
+  }
+  .title-container {
+    margin-top: 37px;
+  }
+  .search-box {
+    width: calc(100% - 8%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4%;
+  }
+  .select-button {
+    width: 100%;
+    border: none;
+    height: 57px;
+  }
+  #select-guests {
+    border: none;
+    border-top: 1px solid #f2f2f2;
+  }
+  .set-values {
+    display: none;
+  }
+  .search-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .select-location-container,
+  .select-guests-container {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .select-location-options {
+    padding: 2% 5%;
+  }
+  .select-guests-options {
+    padding: 4% 5%;
+  }
+}
