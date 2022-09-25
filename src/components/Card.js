@@ -19,17 +19,17 @@ export default function Card({
 
       <div className={style["about-container"]}>
         <div>
-          {superhost ? (
+          {superhost && (
             <button className={style["superhost-button"]}>super host</button>
-          ) : null}
+          )}
           <span className={style["info"]}>{info}</span>
         </div>
-        {rating ? (
+        {rating && (
           <div className={style["rating-container"]}>
             <span className="material-icons star">star</span>
             <span className={style["rating"]}>{rating}</span>
           </div>
-        ) : null}
+        )}
       </div>
       <div className={style["title"]}>{title}</div>
     </div>
