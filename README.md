@@ -1,22 +1,13 @@
 ## React Windbnb
 
-**Check the demo:**
-
-https://windbnb-dev.netlify.app/
-
-https://windbnb-v2.netlify.app/
-
-
-<h1 align="center">Windbnb</h1>
-
 <div align="center">
    Solution for a challenge from  <a href="https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD" target="_blank">Devchallenges.io</a>.
 </div>
 
-
 ## Table of Contents
 
 - [Overview](#overview)
+- [Demo](#demo)
 - [Built With](#built-with)
 - [Features](#features)
 
@@ -26,6 +17,12 @@ https://windbnb-v2.netlify.app/
 - Mobile first approach.
 - Hover effect on stays.
 - Screenshot: ![desktop_screenshot](![localhost_3000_](https://user-images.githubusercontent.com/6601996/192210199-2b143fcc-7f48-4d57-a5e4-448221896d79.png))
+
+## Check the demo
+
+https://windbnb-dev.netlify.app/
+
+https://windbnb-v2.netlify.app/
 
 ### Built With
 
