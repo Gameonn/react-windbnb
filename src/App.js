@@ -65,7 +65,7 @@ function App() {
         <Card
           key={element.key}
           image={element.photo}
-          superhost={element.superhost}
+          superhost={element.superHost}
           rating={element.rating}
           info={element.info}
           title={element.title}
