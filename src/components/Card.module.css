@@ -25,7 +25,7 @@ img {
 .superhost-button {
   border: 1px solid #4f4f4f;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 20px;
   background-color: transparent;
   width: 100px;
   height: 28px;
@@ -61,7 +61,7 @@ span.rating {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  white-space: nowrap;
+  white-space: pre-wrap;
   overflow: hidden;
   color: #333333;
   letter-spacing: 1px;
