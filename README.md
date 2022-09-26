@@ -1,8 +1,5 @@
 ## React Windbnb
-
-<div align="center">
-   Solution for a challenge from  <a href="https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD" target="_blank">Devchallenges.io</a>.
-</div>
+Create a small version of Airbnb - Windbnb with sample data using React JS.
 
 ## Table of Contents
 
@@ -20,9 +17,8 @@
 
 ## Check the demo
 
-https://windbnb-dev.netlify.app/
-
-https://windbnb-v2.netlify.app/
+- [Version 1](https://windbnb-dev.netlify.app/)
+- [Version 2](https://windbnb-v2.netlify.app/)
 
 ### Built With
 
