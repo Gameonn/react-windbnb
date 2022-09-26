@@ -1,89 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./App.css";
 import Card from "./components/Card";
-
-const stayDetails = [
-  {
-    key: 1,
-    image: "/images/room1.jpg",
-    superhost: true,
-    rating: "4.5",
-    info: "Private Room",
-    title: "Cozy, Peaceful, Spacious and Private room with",
-    location: "Helsinki, Finland",
-    guests: 3,
-  },
-  {
-    key: 2,
-    image: "/images/stay2.jpg",
-    superhost: true,
-    rating: "4.25",
-    info: "Entire Apartment, 2 Beds",
-    title: "Stylist apartment in the center of city",
-    location: "Turku, Finland",
-    guests: 1,
-  },
-  {
-    key: 3,
-    image: "/images/stay3.jpg",
-    superhost: false,
-    rating: "4.96",
-    info: "Entire House",
-    title: "Modern House in a remote area",
-    location: "Oulu, Finland",
-    guests: 2,
-  },
-  {
-    key: 4,
-    image: "/images/stay4.jpg",
-    superhost: true,
-    rating: "4.54",
-    info: "Entire Apartment, 2 Beds",
-    title: "Modern Apartment Close to Nature",
-    location: "Vaasa, Finland",
-    guests: 4,
-  },
-  {
-    key: 5,
-    image: "/images/stay5.jpg",
-    superhost: true,
-    rating: "4.62",
-    info: "Private Room",
-    title: "House in a remote area",
-    location: "Helsinki, Finland",
-    guests: 3,
-  },
-  {
-    key: 6,
-    image: "/images/stay6.jpg",
-    superhost: true,
-    rating: "4.85",
-    info: "Entire house",
-    title: "Stylist apartment in the center of city",
-    location: "Vaasa, Finland",
-    guests: 3,
-  },
-  {
-    key: 7,
-    image: "/images/stay7.jpg",
-    superhost: true,
-    rating: "4.5",
-    info: "Private Room",
-    title: "Stylist apartment in the center of city",
-    location: "Oulu, Finland",
-    guests: 2,
-  },
-  {
-    key: 8,
-    image: "/images/stay8.jpg",
-    superhost: true,
-    rating: "4.5",
-    info: "Private Room",
-    title: "Stylist apartment in the center of city",
-    location: "Helsinki, Finland",
-    guests: 5,
-  },
-];
+import stayDetails from "./stays.json";
 
 // Get the location names to show as options in filter
 const locationList = [
@@ -146,7 +64,7 @@ function App() {
       .map((element) => (
         <Card
           key={element.key}
-          image={element.image}
+          image={element.photo}
           superhost={element.superhost}
           rating={element.rating}
           info={element.info}
