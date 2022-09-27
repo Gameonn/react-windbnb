@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.card .fa-star {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0/0.35));
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
