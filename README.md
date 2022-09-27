@@ -13,7 +13,7 @@ Create a small version of Airbnb - Windbnb with sample data using React JS.
 - Solution for the challenge [Windbnb](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD)
 - Mobile first approach.
 - Hover effect on stays.
-- Screenshot: ![desktop_screenshot](![localhost_3000_](https://user-images.githubusercontent.com/6601996/192210199-2b143fcc-7f48-4d57-a5e4-448221896d79.png))
+- Screenshot: [desktop_screenshot](https://user-images.githubusercontent.com/6601996/192210199-2b143fcc-7f48-4d57-a5e4-448221896d79.png)
 
 ## Check the demo
 
