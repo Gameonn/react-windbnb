@@ -23,7 +23,7 @@ const Card = (props) => {
           )}
           <div className={superHost ? "col-6" : "col-8"}>
             <p className="text-muted">
-              {type} {beds && ", " + beds + " beds"}{" "}
+              {type} {beds && ", " + beds + " beds"}
             </p>
           </div>
           <div className="col-2 text-end">
