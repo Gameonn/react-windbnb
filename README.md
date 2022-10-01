@@ -1,4 +1,4 @@
-## React Windbnb
+## React WindBnB
 Create a small version of Airbnb - Windbnb with sample data using React JS.
 
 ## Table of Contents
